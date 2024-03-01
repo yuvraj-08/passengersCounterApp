@@ -179,11 +179,18 @@ footer{
 @media screen and (max-width: 560px) {
     .counterContainer{
         max-width: 80%;
+        box-shadow: #333 8px 10px 20px;
+    }
+    .dark-mode{
+        .counterContainer{
+            box-shadow: rgb(196, 196, 195) 8px 10px 20px;
+        }
     }
     footer{
         position: static;
         margin-top:100px;
     }
+
 }
 @media screen and (max-width: 425px) {
     .row{
