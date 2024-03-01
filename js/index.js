@@ -41,3 +41,18 @@ function totalFunc(){
     console.log(total);
     totalContainer.textContent = "Total Passengers : " + total;
 }
+
+let mode =  document.getElementById("mode-changer");
+let bodyEle = document.body;
+const inner =  document.getElementById("mode-changer").innerHTML
+
+function changeMode(){
+    if(mode.textContent == inner){
+        mode.textContent = "🌑";
+    }
+    else{
+        mode.textContent = inner;
+    }
+    bodyEle.classList.toggle("dark-mode");
+    
+}
