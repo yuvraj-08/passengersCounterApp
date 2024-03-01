@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Counter App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="startB" id="startB">
+        <button id="startButton" onclick="document.getElementById('startB').style.display = 'none';">CLICK TO START THE APP</button>
+    </div>
+    <div class="counterContainer">
+
+        <header>        
+            <h1>Passengers Entered</h1>
+            <h2 id="Counter"> 0 </h2>
+        </header>
+
+        <div class="btn-container">
+            <div class="rowOne row">
+                <button id="incrButton">Increment</button>
+                <button id="saveButton" onclick="saveFunc()">SAVE</button>
+            </div>
+            <div class="rowTwo row">
+                <button id="totalButton" onclick="totalFunc()">Total Passengers</button>
+              <button id="resetButton">RESET</button>
+            </div>     
+         </div>
+
+         <div class="output-container">
+           <p id="save-ele">Previous Entries : </p>
+           <p id="total"></p>
+         </div>
+
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>

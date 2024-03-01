@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 79vh; */
+  /* background: linear-gradient(45deg, #000000a8,#0000008c,#000000b9),url("https://cdn.pixabay.com/photo/2017/08/07/03/05/subway-2599115_640.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.startB {
+  display: block;
+  min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+  color: aquamarine;
+}
+
+.startB button {
+  max-width: 500px;
+  margin: auto;
+  position: fixed;
+  top: 300px;
+  left: 32%;
+}
+
+.counterContainer {
+  background-color: bisque;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: #333 -1px 1px 20px 19px;
+}
+
+button {
+  padding: 7px 12px;
+  background-color: darkorchid;
+  color: #fff;
+  font-size: 20px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+#Counter {
+  font-size: 35px;
+  margin: 15px;
+}
+
+#save-ele {
+  display: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.output-container {
+  text-align: left;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */
