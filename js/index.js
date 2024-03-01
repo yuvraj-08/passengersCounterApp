@@ -25,8 +25,10 @@ function resetFunc(){
     totalContainer.style.display = "none";
     saveEle.style.display = "none";
 }
+let saveCount = 0;
 
 function saveFunc(){
+    saveCount += 1;
     saveEle.style.display = "block";
     let countStr = count + " - ";
     saveEle.textContent += countStr;
@@ -34,6 +36,17 @@ function saveFunc(){
     //setting count = 0 to count the passengers of next batch from 0
     count = 0;
     counter.textContent = 0;
+    if(saveCount <=1){
+          // Get the snackbar DIV
+    let snack = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    snack.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ snack.className = snack.className.replace("show", ""); }, 3000);
+    }
+   
 }
 
 function totalFunc(){
