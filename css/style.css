@@ -35,18 +35,23 @@ a {
   display: block;
   min-height: 100vh;
   min-width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 100;
-  background-color: black;
+  background: url("https://i.pinimg.com/originals/25/7c/a5/257ca595dd14fb0f43ee592134af200f.gif");
+  background: url("https://31.media.tumblr.com/94524b8bbe6664a54a7f037aae464b86/tumblr_mqeyqxzZBM1r7uuywo1_1280.gif");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
   color: aquamarine;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 .startB button {
   max-width: 500px;
   margin: auto;
   position: fixed;
-  top: 300px;
+  top: 200px;
   left: 32%;
 }
 
